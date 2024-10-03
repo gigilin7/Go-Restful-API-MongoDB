@@ -5,7 +5,7 @@ This mini project can do CRUD for management users.
 ## Database
 [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-database) ( the Cloud-Native Document Database as a Service. )
   + Region: AWS Hong Kong (ap-east-1)
-  + version: 7.0.12
+  + Version: 7.0.12
  
 ## Structure
 ```
@@ -86,7 +86,7 @@ curl -X DELETE http://localhost:9090/v1/user/delete/:name
 ## Result
 <img src="https://github.com/gigilin7/Go-Restful-API-MongoDB/blob/main/picture/mongodb1.jpg" height=200>
 
-<img src="https://github.com/gigilin7/Go-Restful-API-MongoDB/blob/main/picture/mongodb2.jpg" height=400><img src="https://github.com/gigilin7/Go-Restful-API-MongoDB/blob/main/picture/mongodb3.jpg" height=400>
+<img src="https://github.com/gigilin7/Go-Restful-API-MongoDB/blob/main/picture/mongodb2.jpg" height=400> <img src="https://github.com/gigilin7/Go-Restful-API-MongoDB/blob/main/picture/mongodb3.jpg" height=400>
 
 <img src="https://github.com/gigilin7/Go-Restful-API-MongoDB/blob/main/picture/mongodb-amy.jpg" height=400>
 
