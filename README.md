@@ -7,7 +7,7 @@ This mini project can do CRUD for management users.
   + Region: AWS Hong Kong (ap-east-1)
   + version: 7.0.12
  
-## File structure
+## Structure
 ```
 .
 ├─config
@@ -22,16 +22,16 @@ This mini project can do CRUD for management users.
 └─usecase
 ```
 Explain the individual functions and functions of the above folders:
-+ config: The setting of database.
-+ delivery:
-  + http: A UserController using the Gin framework is defined to register a set of user-related routes, including APIs for creating, obtaining single or all users, updating and deleting users.
-  + response: Indicates the format of the API response, including status code, message content and returned data.
-+ domain:
-  + models: The data object.
-  + repository: Interface of CRUD operations.
-  + usecase: Connect the business process flow with the data flow that is processed in the repository section.
-+ repository: Functions for every usecase in folder domain.
-+ usecase: Functions for every repository in folder domain.
++ `config`: The setting of database.
++ `delivery`:
+  + `http`: A UserController using the Gin framework is defined to register a set of user-related routes, including APIs for creating, obtaining single or all users, updating and deleting users.
+  + `response`: Indicates the format of the API response, including status code, message content and returned data.
++ `domain`:
+  + `models`: The data object.
+  + `repository`: Interface of CRUD operations.
+  + `usecase`: Connect the business process flow with the data flow that is processed in the repository section.
++ `repository`: Functions for every usecase in folder domain.
++ `usecase`: Functions for every repository in folder domain.
 
 ## Requirement
 Install godotenv package and load .env file
@@ -82,6 +82,13 @@ curl -X PATCH http://localhost:9090/v1/user/update \
 ```
 curl -X DELETE http://localhost:9090/v1/user/delete/:name
 ```
+
+## Result
+<img src="https://github.com/gigilin7/Go-Restful-API-MongoDB/blob/main/picture/mongodb1.jpg" height=200>
+
+<img src="https://github.com/gigilin7/Go-Restful-API-MongoDB/blob/main/picture/mongodb2.jpg" height=400><img src="https://github.com/gigilin7/Go-Restful-API-MongoDB/blob/main/picture/mongodb3.jpg" height=400>
+
+<img src="https://github.com/gigilin7/Go-Restful-API-MongoDB/blob/main/picture/mongodb-amy.jpg" height=400>
 
 [Reference for learning](https://medium.com/@hoseahutahuruk/build-rest-api-golang-gin-mongodb-b6ac5713440f)
 
